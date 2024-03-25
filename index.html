@@ -10,24 +10,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/icon.css">
 </head>
 <body class="body">
-    <header class="header">
+    <header class="headerheader">
         <div class="container header__container">
            <a class="header__logo-link" href="/">
                 <svg class="header__logo">
                 <use href="./images/symbol-defs.svg#icon-logo"></use>
                 </svg>
            </a>
+            <button class="header__toggle">
+                <span class="header__line"></span>
+                <span class="header__line"></span>
+                <span class="header__line"></span>
+            </button>
            <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item"><a class="header__nav-link header__nav-link_active" href="./index.html">Home</a></li>
                 <li class="header__nav-item">
-                    <svg class="header__icon">
-                      <use href="./images/symbol-defs.svg#icon-number"></use>
-                    </svg>
-                    <a class="header__nav-link" href="">Projects</a>
+                    <a class="header__nav-link" href=""> <span class="header__nav-number">20</span> Projects</a>
                 </li>
                 <li class="header__nav-item"><a class="header__nav-link" href="">About</a></li>
                 <li class="header__nav-item"><a class="header__nav-link" href="">Contact</a></li>
@@ -38,31 +39,31 @@
     <main class="main">
         <section class="hero">
             <div class="container">
-                      <h1 class="title-h1 hero__title-h1">Websites&amp; Branding</h1>
-                      <div class="scroll">
-                        <button class="scroll__button"> SCROLL DOWN
-                           <svg class="scroll__icon">
+                      <h1 class="title-h1 hero__title">Websites&amp; Branding</h1>
+                      <div class="hero__button">
+                        <a class="button primary__button" href="#projects-block"> SCROLL DOWN
+                           <svg class="hero__icon">
                               <use href="./images/symbol-defs.svg#icon-arrow-bottom"></use>
                            </svg>
-                        </button>
+                        </a>
                        </div>
-                    <div class="hero__talk">
-                            <div class="hero__talk-email">
-                                <h3 class="title-h3 hero__talk-title-h3">Let’s Talk</h3>
-                                <a class="link hero__talk-email" href="mailto:your.hello@joey.co">hello@joey.co</a>
+                    <div class="hero__info">
+                            <div class="hero__email">
+                                <h3 class="title-h3 hero__email-title">Let’s Talk</h3>
+                                <a class="link hero__email-link" href="mailto:hello@joey.co">hello@joey.co</a>
                             </div>
-                            <div class="hero__talk-description">
-                                <p class="hero__talk-text">Hello, I'm Joey, an online product designer focusing on brand identity,
+                            <div class="hero__description">
+                                <p class="hero__about">Hello, I'm Joey, an online product designer focusing on brand identity,
                                     advertising, and no-code instruments.</p>
                             </div>
                     </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects-block">
             <div class="container">
                 <div class="projects__content">
                     <div class="projects__content-info">
-                        <h2 class="title-h2 projects__title-h2">Projects</h2>
+                        <h2 class="title-h2 projects__title">Projects</h2>
                         <p class="text projects__text">As a seasoned creator of contemporary, user-friendly web designs and digital solutions, I aim to assist you in constructing the brand of your fantasies.</p>
                     </div>
                   <div class="projects__button">
@@ -99,7 +100,7 @@
         </section>
         <section class="expertise">
             <div class="container">
-                <h2 class="title-h2 expertise-title-h2">Expertise</h2>
+                <h2 class="title-h2 expertise__title">Expertise</h2>
                 <div class="expertise__column">
                     <div class="expertise__column-item">
                         <h3 class="title-h3 expertise__title-h3">Branding</h3>
@@ -122,7 +123,7 @@
         </section>
         <section class="spinning-design">
             <div class="spinning-design__info">
-                <p class="spinning-design__text">Visual design for digital experiences</p>
+                <h2 class="spinning-design__text">Visual design for digital experiences</h2>
             </div>
         </section>
         <section class="testimonials">
@@ -139,17 +140,21 @@
                 </div>
             </div>
         </section>
+        <section class="talk">
+            <div class="container">
+                <div class="talk__info">
+                    <h2 class="talk__title">Let’s talk!</h2>
+                        <a class="button secondary__button" href="mailto:.hello@joey.co">hello@joey.co
+                            <svg class="talk__icon">
+                              <use href="./images/symbol-defs.svg#icon-arrow-diagonal"></use>
+                            </svg>
+                        </a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer__talk">
-                <h2 class="footer__talk-title">Let’s talk!</h2>
-                <a class="link footer__talk-link" href="mailto:your.hello@joey.co">hello@joey.co
-                    <svg class="footer__talk-icon">
-                      <use href="./images/symbol-defs.svg#icon-arrow-diagonal"></use>
-                    </svg>
-                </a>
-            </div>
             <div class="footer__info">
                 <p class="footer__text">2023 &copy; — Made by Djectstudio</p>
                  <div class="footer__web">
